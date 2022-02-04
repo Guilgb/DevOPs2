@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+    production:
+      container_name: thisapp
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - "8080:80"
